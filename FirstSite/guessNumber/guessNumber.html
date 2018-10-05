@@ -1,0 +1,33 @@
+﻿<meta charset=`unf-8`>
+<script> 
+
+ alert ("Угадайте число!");
+    var correctAnswersCount = 0; 
+    var answer = parseInt(Math.random() * 100);
+
+    while (true){
+        for (numberUser = 1; numberUser < 3; numberUser++){
+    var userAnswer = prompt(`Игрок №` + numberUser + ` введите целое число от 0 до 100! Для выхода введите -1`);
+                
+    if (userAnswer == -1){
+        break;
+    }
+        
+    userAnswer = parseInt(userAnswer);
+
+    if (userAnswer > answer){
+        alert(`Ваш ответ слишком большой`);
+    }
+    else if (userAnswer < answer){
+        alert(`Ваш ответ слишком маленький`);
+    }
+    else if (userAnswer == answer){
+        alert(`Вы угадали`);
+        correctAnswersCount++;
+        break;
+    }
+    }  
+    }
+    alert(`Число угадано с ` + correctAnswersCount + ` попыток!`);
+    
+</script>
