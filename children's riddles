@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+<script>
+
+    alert ("Отгадайте загадки!");
+    var correctAnswersCount = 0; //кол-во правильных ответов
+
+var answer = prompt("Зимой и летом одним цветом").toLowerCase(); //переведи ответ в маленькие буквы
+    if (answer == "ёлка" || "eлка"){
+	   alert("Верно!");
+    correctAnswersCount++;
+    }
+    else {
+	   alert("Не верно!");
+    }
+    
+answer = prompt("100 одежек и все без застежек").toLowerCase();
+if (answer == "капуста"){
+	   alert("Верно!");
+    correctAnswersCount++;
+}
+else {
+	   alert("Не верно!");
+}
+    
+answer = prompt("Золотая кошка лезет к нам в окошко").toLowerCase();
+if (answer == "солнце"){
+	   alert("Верно!");
+    correctAnswersCount++;
+    //break;
+}
+else {
+	   alert("Не верно!");
+}
+    
+alert ("Количество правильных ответов: " + correctAnswersCount);
+</script>
