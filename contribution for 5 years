@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+    var sum = +prompt(`Введите сумму вклада:`);
+    var percent = +prompt(`Введите процентную ставку:`);
+    var years = 1;
+    
+    for (years = 1; years<=5; years++){
+        sum = oneYear(sum);
+        alert(`Сумма денег на вкладе через ` + years + ` год составит:` + sum.toFixed(2));
+    }
+        
+    function oneYear(sum){
+        return sum * (1 + percent / 100)
+    }
+</script>
