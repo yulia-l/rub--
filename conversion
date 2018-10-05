@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script>
+    
+var rub = +prompt(`Введите сумму в рублях: `);
+
+var usd = rub / 58.43;
+    alert(`Сумма в USD: ` + usd.toFixed(2));
+
+var eur = rub / 68.08;
+	alert(`Сумма в EUR: ` + eur.toFixed(2));
+
+</script>
