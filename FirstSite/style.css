@@ -37,6 +37,10 @@ main {
     flex-wrap: wrap;
 }
 
+main img {
+    border-radius: 200px;
+}
+
 main p {
     width: 693px;
     color: #242424;
